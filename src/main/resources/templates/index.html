@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Search</title>
+</head>
+<body>
+<h1>Search for Movies</h1>
+<form action="/scrap" method="post">
+    <input type="text" name="content" placeholder="Enter movie title" required>
+    <button type="submit">Search</button>
+</form>
+<p th:text="${error}"></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Results</title>
+</head>
+<body>
+<h1>Movies Found</h1>
+<ul>
+    <li th:each="movie : ${movies}">
+        <p><strong>Title:</strong> <span th:text="${movie['title']}"></span></p>
+        <p><strong>Overview:</strong> <span th:text="${movie['overview']}"></span></p>
+        <p><strong>Release Date:</strong> <span th:text="${movie['release_date']}"></span></p>
+    </li>
+</ul>
+<a href="/">Search Again</a>
+</body>
+</html>
